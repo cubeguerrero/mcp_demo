@@ -212,7 +212,7 @@ DEFAULT_JVM_OPTS=""
 
 set -- \
         -classpath "$CLASSPATH" \
-        io.vertx.core.Launcher \
+        mcp_demo.Main \
         "$@"
 
 # Stop when "xargs" is not available.

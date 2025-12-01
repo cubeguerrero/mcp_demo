@@ -74,7 +74,7 @@ set CLASSPATH=%APP_HOME%\lib\starter-1.0.0-SNAPSHOT-fat.jar
 
 
 @rem Execute starter
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STARTER_OPTS%  -classpath "%CLASSPATH%" io.vertx.core.Launcher %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STARTER_OPTS%  -classpath "%CLASSPATH%" mcp_demo.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell

@@ -18,10 +18,7 @@ val vertxVersion = "4.5.22"
 val junitJupiterVersion = "5.9.1"
 
 val mainVerticleName = "mcp_demo.MainVerticle"
-val launcherClassName = "io.vertx.core.Launcher"
-
-val watchForChange = "src/**/*"
-val doOnChange = "${projectDir}/gradlew classes"
+val launcherClassName = "mcp_demo.Main"
 
 application {
   mainClass.set(launcherClassName)
@@ -59,5 +56,5 @@ tasks.withType<Test> {
 }
 
 tasks.withType<JavaExec> {
-  args = listOf("run", mainVerticleName, "--redeploy=$watchForChange", "--launcher-class=$launcherClassName", "--on-redeploy=$doOnChange")
+  // Weld-based application - no Vert.x launcher args needed
 }
